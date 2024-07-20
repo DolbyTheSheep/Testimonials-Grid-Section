@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-size: 13px;
+    --font-weight: 500;
+    --font-weight-bold: 600; 
+
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* 
+        1. "Verified Graduate" has the same color as the person's name with 50% opacity
+        2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity 
+    */
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    padding: 5%;
+
+    font-family: 'Barlow Semi Condensed';
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.white {
+    color: var(--very-dark-grayish-blue);
+}
+
+main {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+section {
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile p {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 25px;
+    border: solid 2px;
+
+}
+
+.name {
+    font-weight: var(--font-weight-bold);
+}
+
+.role {
+    opacity: 50%;
+}
+
+.quote {
+    opacity: 70%;
+}
+
+
+#daniel {
+    background-color: var(--moderate-violet);
+}
+
+#jonathan {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+#jeanette {
+    background-color: var(--white);
+}
+
+#patrick {
+    background-color: var(--very-dark-blackish-blue);
+}
+
+#kira {
+    background-color: var(--white);
+}
+
+
