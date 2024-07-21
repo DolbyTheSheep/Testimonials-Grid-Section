@@ -48,6 +48,14 @@ main {
 section {
     border-radius: 15px;
     padding: 30px;
+
+    box-shadow: var(--very-dark-blackish-blue) 0px 10px 20px -15px;
+    transition: transform .2s;
+}
+
+section:hover {
+    cursor: pointer;
+    transform: scale(1.04);
 }
 
 .profile {
@@ -99,6 +107,99 @@ img {
 
 #kira {
     background-color: var(--white);
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        max-width: 90%;
+        margin: auto;
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    #jeanette {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    #daniel {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+
+    #patrick {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+
+    #kira {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+
+    #jonathan  {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    body {
+        padding: 0px;
+        margin: 0;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #daniel {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column-end: span 2;
+    }
+
+    #jonathan {
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+
+    #patrick {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: span 2;
+    }
+
+    #kira {
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+
+    #jeanette {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
 }
 
 
