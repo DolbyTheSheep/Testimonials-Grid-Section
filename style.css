@@ -48,8 +48,6 @@ main {
 section {
     border-radius: 15px;
     padding: 30px;
-
-    box-shadow: var(--very-dark-blackish-blue) 0px 10px 20px -15px;
     transition: transform .2s;
 }
 
