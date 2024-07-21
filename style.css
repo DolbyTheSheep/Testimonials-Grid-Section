@@ -88,9 +88,28 @@ img {
     opacity: 70%;
 }
 
+.background {
+    border-radius: 0px;
+    border: none;
+    width: 150px;
+    max-width: 30%;
+    height: auto;
+    margin-right: 15%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+p, h1 {
+    position: relative;
+    z-index: 2;
+}
+
 
 #daniel {
     background-color: var(--moderate-violet);
+    position: relative;
 }
 
 #jonathan {
